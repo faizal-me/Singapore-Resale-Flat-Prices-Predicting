@@ -80,7 +80,7 @@ if 'input_values' not in st.session_state:
     }
 
 if section == "🏠 Home":
-    st.image("Singapore.webp", caption="Singapore", use_column_width=True)  
+    st.image("https://static.toiimg.com/thumb/msid-107700466,width-748,height-499,resizemode=4,imgsize-119838/Singapores-beautiful-places-Explore-the-magic.jpg", caption="Singapore", use_column_width=True)  
     st.markdown("### About This Application")
     st.write(
         """
