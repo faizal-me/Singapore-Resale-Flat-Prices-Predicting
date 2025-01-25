@@ -80,7 +80,6 @@ if 'input_values' not in st.session_state:
     }
 
 if section == "🏠 Home":
-    st.image("Singapore.webp", caption="Singapore", use_column_width=True)  
     st.markdown("### About This Application")
     st.write(
         """
