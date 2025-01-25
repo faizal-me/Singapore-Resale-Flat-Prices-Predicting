@@ -80,7 +80,7 @@ if 'input_values' not in st.session_state:
     }
 
 if section == "🏠 Home":
-    st.image("https://static.toiimg.com/thumb/msid-107700466,width-748,height-499,resizemode=4,imgsize-119838/Singapores-beautiful-places-Explore-the-magic.jpg", caption="Singapore", use_column_width=True)  
+    st.image("Singapore.webp", caption="Singapore", use_column_width=True)  
     st.markdown("### About This Application")
     st.write(
         """
@@ -150,9 +150,8 @@ elif section == "💵 Predict Resale Price":
             predicted_price = pipeline.predict(input_data)[0]
             st.success(f"🎉 Predicted Resale Price: ${predicted_price:.2f}")
 
-           # Download button for result
+        # Download button for result
         download_df = input_data.copy()
         download_df['predicted_resale_price'] = predicted_price
         csv = download_df.to_csv(index=False)
         st.download_button(label="Download Prediction Results", data=csv, file_name='resale_price_prediction.csv', mime='text/csv')
-
